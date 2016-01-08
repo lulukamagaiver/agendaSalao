@@ -65,7 +65,13 @@ public class ProdutoServico implements Serializable{
 	public void setValor(BigDecimal valor) {
 		this.valor = valor;
 	}
-	
-	
+	/* (non-Javadoc)
+	 * @see java.lang.Object#toString()
+	 */
+	@Override
+	public String toString() {
+		return "ProdutoServico [id=" + id + ", nomeProdServ=" + nomeProdServ
+				+ ", valor=" + valor + "]";
+	}
 	
 }
